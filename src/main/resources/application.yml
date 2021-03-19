@@ -14,7 +14,7 @@ spring:
 ---
 spring:
   profiles:
-    active: dev
+    active: prod
 
 ---
 spring:
@@ -60,7 +60,7 @@ spring:
     hibernate.ddl-auto: update  
     
 server:
-  port: 1112    
+  port: 5000    
     
     
       
