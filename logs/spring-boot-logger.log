@@ -1,0 +1,924 @@
+2021-03-18 00:48:58,071 INFO org.springframework.boot.StartupInfoLogger [main] Starting StockBackendApplication on DESKTOP-5I9DO52 with PID 10264 (E:\ProjectKKT\Connect Database\stock_backend\target\classes started by Shitty in E:\ProjectKKT\Connect Database\stock_backend)
+2021-03-18 00:48:58,118 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-03-18 00:48:59,971 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-18 00:49:00,079 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 95ms. Found 2 JPA repository interfaces.
+2021-03-18 00:49:00,929 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 1150 (http)
+2021-03-18 00:49:00,945 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1150"]
+2021-03-18 00:49:00,946 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-18 00:49:00,946 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-18 00:49:01,126 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-18 00:49:01,127 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2948 ms
+2021-03-18 00:49:01,357 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 00:49:01,420 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 00:49:01,523 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 00:49:01,538 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-03-18 00:49:01,767 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-18 00:49:01,926 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Starting...
+2021-03-18 00:49:03,518 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2021-03-18 00:49:03,616 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-18 00:49:06,445 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [task-1] SQL Warning Code: 0, SQLState: 00000
+2021-03-18 00:49:06,445 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [task-1] constraint "uk_kiqfjabx9puw3p1eg7kily8kg" of relation "user" does not exist, skipping
+2021-03-18 00:49:06,633 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [task-1] SQL Warning Code: 0, SQLState: 00000
+2021-03-18 00:49:06,633 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [task-1] constraint "uk_sb8bbouer5wak8vyiiy4pf2bx" of relation "user" does not exist, skipping
+2021-03-18 00:49:06,746 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 00:49:06,758 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 00:49:07,435 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 6bde81e2-d66f-41ce-8b79-a6c9a21e48a5
+
+2021-03-18 00:49:07,605 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@668a32a4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c17bd0b, org.springframework.security.web.header.HeaderWriterFilter@2353354a, org.springframework.security.web.csrf.CsrfFilter@1f179f51, org.springframework.security.web.authentication.logout.LogoutFilter@356b6b5d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72b40f87, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1ac0cdb0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2026fbff, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@349f0ca4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b098563, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30ec211a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@baa227e, org.springframework.security.web.session.SessionManagementFilter@22b7ef2b, org.springframework.security.web.access.ExceptionTranslationFilter@6c96403e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5dc7841c]
+2021-03-18 00:49:07,647 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-1150"]
+2021-03-18 00:49:07,680 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 1150 (http) with context path ''
+2021-03-18 00:49:07,681 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2021-03-18 00:49:07,877 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2021-03-18 00:49:07,887 INFO org.springframework.boot.StartupInfoLogger [main] Started StockBackendApplication in 10.563 seconds (JVM running for 12.07)
+2021-03-18 00:49:25,512 INFO org.apache.juli.logging.DirectJDKLog [http-nio-1150-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 00:49:25,513 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1150-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-18 00:49:25,534 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1150-exec-1] Completed initialization in 21 ms
+2021-03-18 00:49:26,097 WARN org.apache.juli.logging.DirectJDKLog [http-nio-1150-exec-1] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [364] milliseconds.
+2021-03-18 00:51:07,704 WARN org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder [http-nio-1150-exec-5] Encoded password does not look like BCrypt
+2021-03-18 01:03:46,286 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(18)-127.0.0.1] Application shutdown requested.
+2021-03-18 01:03:46,586 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(18)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 01:03:46,589 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [RMI TCP Connection(18)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 01:03:46,590 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(18)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-03-18 01:03:50,232 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(18)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-03-18 01:03:55,546 INFO org.springframework.boot.StartupInfoLogger [main] Starting StockBackendApplication on DESKTOP-5I9DO52 with PID 8540 (E:\ProjectKKT\Connect Database\stock_backend\target\classes started by Shitty in E:\ProjectKKT\Connect Database\stock_backend)
+2021-03-18 01:03:55,551 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-03-18 01:03:56,618 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-18 01:03:56,731 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 99ms. Found 2 JPA repository interfaces.
+2021-03-18 01:03:57,560 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 1150 (http)
+2021-03-18 01:03:57,573 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1150"]
+2021-03-18 01:03:57,574 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-18 01:03:57,575 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-18 01:03:57,755 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-18 01:03:57,757 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2138 ms
+2021-03-18 01:03:57,998 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 01:03:58,059 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 01:03:58,147 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 01:03:58,163 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-03-18 01:03:58,284 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 3d74d7cc-88e1-431f-969d-fedcd88cdd8a
+
+2021-03-18 01:03:58,430 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-18 01:03:58,443 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fde2209, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c1d57bc, org.springframework.security.web.header.HeaderWriterFilter@111c229c, org.springframework.security.web.authentication.logout.LogoutFilter@6424e613, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e856100, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41e9f86, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f916219, org.springframework.security.web.session.SessionManagementFilter@7ddcb0dc, org.springframework.security.web.access.ExceptionTranslationFilter@370c9018, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2db86a7c]
+2021-03-18 01:03:58,636 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Starting...
+2021-03-18 01:04:00,216 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2021-03-18 01:04:00,396 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-18 01:04:02,825 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 01:04:02,837 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 01:04:03,666 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-1150"]
+2021-03-18 01:04:03,698 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 1150 (http) with context path ''
+2021-03-18 01:04:03,699 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2021-03-18 01:04:03,930 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2021-03-18 01:04:03,942 INFO org.springframework.boot.StartupInfoLogger [main] Started StockBackendApplication in 9.088 seconds (JVM running for 10.788)
+2021-03-18 01:04:08,306 INFO org.apache.juli.logging.DirectJDKLog [http-nio-1150-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 01:04:08,307 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1150-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-18 01:04:08,315 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1150-exec-2] Completed initialization in 8 ms
+2021-03-18 01:37:08,233 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(36)-127.0.0.1] Application shutdown requested.
+2021-03-18 01:37:08,565 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(36)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 01:37:08,578 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [RMI TCP Connection(36)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 01:37:08,579 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(36)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-03-18 01:37:09,392 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(36)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-03-18 02:27:57,567 INFO org.springframework.boot.StartupInfoLogger [main] Starting StockBackendApplication on DESKTOP-5I9DO52 with PID 13776 (E:\ProjectKKT\Connect Database\stock_backend\target\classes started by Shitty in E:\ProjectKKT\Connect Database\stock_backend)
+2021-03-18 02:27:57,571 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-03-18 02:27:59,004 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-18 02:27:59,174 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 144ms. Found 2 JPA repository interfaces.
+2021-03-18 02:28:00,178 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 1150 (http)
+2021-03-18 02:28:00,191 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1150"]
+2021-03-18 02:28:00,191 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-18 02:28:00,192 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-18 02:28:00,368 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-18 02:28:00,369 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2740 ms
+2021-03-18 02:28:00,484 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 02:28:00,641 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:28:00,728 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 02:28:00,836 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authenticationFilter': Unsatisfied dependency expressed through field 'autenAuthenticationManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-03-18 02:28:00,872 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-03-18 02:28:00,883 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2021-03-18 02:28:00,905 WARN org.apache.juli.logging.DirectJDKLog [main] The web application [ROOT] appears to have started a thread named [task-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/java.util.zip.Inflater.inflateBytesBytes(Native Method)
+ java.base@11.0.10/java.util.zip.Inflater.inflate(Inflater.java:385)
+ java.base@11.0.10/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:153)
+ java.base@11.0.10/jdk.internal.loader.Resource.getBytes(Resource.java:124)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:797)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+ java.base@11.0.10/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+ java.base@11.0.10/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+ app//org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.<clinit>(BytecodeProviderImpl.java:43)
+ app//org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:345)
+ app//org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:337)
+ app//org.hibernate.cfg.Environment.<clinit>(Environment.java:230)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1345)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1335)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.mergeSettings(EntityManagerFactoryBuilderImpl.java:471)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:217)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:168)
+ app//org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:52)
+ app//org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean$$Lambda$641/0x00000001005aa840.call(Unknown Source)
+ java.base@11.0.10/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:28:00,910 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-03-18 02:28:00,910 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:28:01,254 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-18 02:28:01,538 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Starting...
+2021-03-18 02:28:03,244 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2021-03-18 02:28:03,306 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-18 02:28:04,663 INFO org.apache.juli.logging.DirectJDKLog [task-1] Illegal access: this web application instance has been stopped already. Could not load [META-INF/validation.xml]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [META-INF/validation.xml]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1115)
+	at org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath(ResourceLoaderHelper.java:61)
+	at org.hibernate.validator.internal.xml.config.ValidationXmlParser.getValidationXmlInputStream(ValidationXmlParser.java:121)
+	at org.hibernate.validator.internal.xml.config.ValidationXmlParser.parseValidationXml(ValidationXmlParser.java:69)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.getBootstrapConfiguration(AbstractConfigurationImpl.java:508)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.parseValidationXml(AbstractConfigurationImpl.java:664)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.buildValidatorFactory(AbstractConfigurationImpl.java:421)
+	at javax.validation.Validation.buildDefaultValidatorFactory(Validation.java:103)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.getValidatorFactory(TypeSafeActivator.java:501)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.activate(TypeSafeActivator.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.hibernate.cfg.beanvalidation.BeanValidationIntegrator.integrate(BeanValidationIntegrator.java:131)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:280)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:28:05,654 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 02:28:05,667 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:28:05,671 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:28:05,671 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-03-18 02:28:06,275 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-03-18 02:28:06,287 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-18 02:28:06,772 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field autenAuthenticationManager in com.codemobiles.stock_backend.security.JWTAuthenticationFiltter required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2021-03-18 02:28:47,222 INFO org.springframework.boot.StartupInfoLogger [main] Starting StockBackendApplication on DESKTOP-5I9DO52 with PID 4652 (E:\ProjectKKT\Connect Database\stock_backend\target\classes started by Shitty in E:\ProjectKKT\Connect Database\stock_backend)
+2021-03-18 02:28:47,227 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-03-18 02:28:48,362 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-18 02:28:48,502 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 124ms. Found 2 JPA repository interfaces.
+2021-03-18 02:28:49,401 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 1150 (http)
+2021-03-18 02:28:49,412 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1150"]
+2021-03-18 02:28:49,414 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-18 02:28:49,414 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-18 02:28:49,583 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-18 02:28:49,584 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2278 ms
+2021-03-18 02:28:49,703 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 02:28:49,851 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:28:49,926 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 02:28:50,021 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authenticationFilter': Unsatisfied dependency expressed through field 'autenAuthenticationManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-03-18 02:28:50,042 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-03-18 02:28:50,066 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2021-03-18 02:28:50,074 WARN org.apache.juli.logging.DirectJDKLog [main] The web application [ROOT] appears to have started a thread named [task-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/java.lang.ClassLoader.defineClass1(Native Method)
+ java.base@11.0.10/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+ java.base@11.0.10/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+ java.base@11.0.10/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+ java.base@11.0.10/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+ app//net.bytebuddy.matcher.ElementMatchers.named(ElementMatchers.java:656)
+ app//org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.<clinit>(BytecodeProviderImpl.java:43)
+ app//org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:345)
+ app//org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:337)
+ app//org.hibernate.cfg.Environment.<clinit>(Environment.java:230)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1345)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1335)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.mergeSettings(EntityManagerFactoryBuilderImpl.java:471)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:217)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:168)
+ app//org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:52)
+ app//org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean$$Lambda$641/0x00000001005aa840.call(Unknown Source)
+ java.base@11.0.10/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:28:50,077 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-03-18 02:28:50,077 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:28:50,302 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-18 02:28:50,478 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Starting...
+2021-03-18 02:28:52,169 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2021-03-18 02:28:52,224 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-18 02:28:53,724 INFO org.apache.juli.logging.DirectJDKLog [task-1] Illegal access: this web application instance has been stopped already. Could not load [META-INF/validation.xml]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [META-INF/validation.xml]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1115)
+	at org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath(ResourceLoaderHelper.java:61)
+	at org.hibernate.validator.internal.xml.config.ValidationXmlParser.getValidationXmlInputStream(ValidationXmlParser.java:121)
+	at org.hibernate.validator.internal.xml.config.ValidationXmlParser.parseValidationXml(ValidationXmlParser.java:69)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.getBootstrapConfiguration(AbstractConfigurationImpl.java:508)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.parseValidationXml(AbstractConfigurationImpl.java:664)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.buildValidatorFactory(AbstractConfigurationImpl.java:421)
+	at javax.validation.Validation.buildDefaultValidatorFactory(Validation.java:103)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.getValidatorFactory(TypeSafeActivator.java:501)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.activate(TypeSafeActivator.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.hibernate.cfg.beanvalidation.BeanValidationIntegrator.integrate(BeanValidationIntegrator.java:131)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:280)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:28:54,844 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 02:28:54,859 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:28:54,867 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:28:54,868 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-03-18 02:28:55,464 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-03-18 02:28:55,489 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-18 02:28:55,604 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field autenAuthenticationManager in com.codemobiles.stock_backend.security.JWTAuthenticationFiltter required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2021-03-18 02:31:53,615 INFO org.springframework.boot.StartupInfoLogger [main] Starting StockBackendApplication on DESKTOP-5I9DO52 with PID 12524 (E:\ProjectKKT\Connect Database\stock_backend\target\classes started by Shitty in E:\ProjectKKT\Connect Database\stock_backend)
+2021-03-18 02:31:53,626 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-03-18 02:31:55,451 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-18 02:31:55,568 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 102ms. Found 2 JPA repository interfaces.
+2021-03-18 02:31:56,360 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 1150 (http)
+2021-03-18 02:31:56,382 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1150"]
+2021-03-18 02:31:56,388 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-18 02:31:56,390 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-18 02:31:56,846 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-18 02:31:56,847 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3100 ms
+2021-03-18 02:31:57,064 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 02:31:57,391 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:31:57,510 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 02:31:57,710 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-03-18 02:31:57,718 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authenticationFilter': Unsatisfied dependency expressed through field 'autenAuthenticationManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-03-18 02:31:57,757 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2021-03-18 02:31:57,774 WARN org.apache.juli.logging.DirectJDKLog [main] The web application [ROOT] appears to have started a thread named [task-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/java.io.WinNTFileSystem.getBooleanAttributes(Native Method)
+ java.base@11.0.10/java.io.File.exists(File.java:822)
+ java.base@11.0.10/jdk.internal.loader.URLClassPath$FileLoader.getResource(URLClassPath.java:1242)
+ java.base@11.0.10/jdk.internal.loader.URLClassPath.getResource(URLClassPath.java:314)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:695)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+ java.base@11.0.10/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+ java.base@11.0.10/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+ java.base@11.0.10/java.lang.ClassLoader.defineClass1(Native Method)
+ java.base@11.0.10/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+ java.base@11.0.10/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+ java.base@11.0.10/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+ java.base@11.0.10/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+ app//net.bytebuddy.ByteBuddy.<init>(ByteBuddy.java:196)
+ app//net.bytebuddy.ByteBuddy.<init>(ByteBuddy.java:187)
+ app//org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState.<init>(ByteBuddyState.java:74)
+ app//org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.<init>(BytecodeProviderImpl.java:53)
+ app//org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:345)
+ app//org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:337)
+ app//org.hibernate.cfg.Environment.<clinit>(Environment.java:230)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1345)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1335)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.mergeSettings(EntityManagerFactoryBuilderImpl.java:471)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:217)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:168)
+ app//org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:52)
+ app//org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean$$Lambda$641/0x00000001005aac40.call(Unknown Source)
+ java.base@11.0.10/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:31:57,778 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-03-18 02:31:57,779 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:31:58,035 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-18 02:31:58,294 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Starting...
+2021-03-18 02:32:00,201 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2021-03-18 02:32:00,248 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-18 02:32:01,578 INFO org.apache.juli.logging.DirectJDKLog [task-1] Illegal access: this web application instance has been stopped already. Could not load [META-INF/validation.xml]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [META-INF/validation.xml]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1115)
+	at org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath(ResourceLoaderHelper.java:61)
+	at org.hibernate.validator.internal.xml.config.ValidationXmlParser.getValidationXmlInputStream(ValidationXmlParser.java:121)
+	at org.hibernate.validator.internal.xml.config.ValidationXmlParser.parseValidationXml(ValidationXmlParser.java:69)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.getBootstrapConfiguration(AbstractConfigurationImpl.java:508)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.parseValidationXml(AbstractConfigurationImpl.java:664)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.buildValidatorFactory(AbstractConfigurationImpl.java:421)
+	at javax.validation.Validation.buildDefaultValidatorFactory(Validation.java:103)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.getValidatorFactory(TypeSafeActivator.java:501)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.activate(TypeSafeActivator.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.hibernate.cfg.beanvalidation.BeanValidationIntegrator.integrate(BeanValidationIntegrator.java:131)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:280)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:32:02,491 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 02:32:02,504 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:32:02,508 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:32:02,509 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-03-18 02:32:03,043 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-03-18 02:32:03,052 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-18 02:32:03,152 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field autenAuthenticationManager in com.codemobiles.stock_backend.security.JWTAuthenticationFiltter required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2021-03-18 02:32:37,732 INFO org.springframework.boot.StartupInfoLogger [main] Starting StockBackendApplication on DESKTOP-5I9DO52 with PID 11496 (E:\ProjectKKT\Connect Database\stock_backend\target\classes started by Shitty in E:\ProjectKKT\Connect Database\stock_backend)
+2021-03-18 02:32:37,738 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-03-18 02:32:38,744 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-18 02:32:38,853 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 95ms. Found 2 JPA repository interfaces.
+2021-03-18 02:32:39,742 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 1150 (http)
+2021-03-18 02:32:39,760 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1150"]
+2021-03-18 02:32:39,761 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-18 02:32:39,761 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-18 02:32:39,925 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-18 02:32:39,926 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2119 ms
+2021-03-18 02:32:40,041 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 02:32:40,170 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:32:40,238 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 02:32:40,353 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authenticationFilter': Unsatisfied dependency expressed through field 'autenAuthenticationManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-03-18 02:32:40,354 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-03-18 02:32:40,398 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2021-03-18 02:32:40,409 WARN org.apache.juli.logging.DirectJDKLog [main] The web application [ROOT] appears to have started a thread named [task-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/java.lang.ClassLoader.defineClass1(Native Method)
+ java.base@11.0.10/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+ java.base@11.0.10/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+ java.base@11.0.10/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+ java.base@11.0.10/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+ app//net.bytebuddy.ByteBuddy.<init>(ByteBuddy.java:187)
+ app//org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState.<init>(ByteBuddyState.java:74)
+ app//org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.<init>(BytecodeProviderImpl.java:53)
+ app//org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:345)
+ app//org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:337)
+ app//org.hibernate.cfg.Environment.<clinit>(Environment.java:230)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1345)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1335)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.mergeSettings(EntityManagerFactoryBuilderImpl.java:471)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:217)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:168)
+ app//org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:52)
+ app//org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean$$Lambda$641/0x00000001005aa840.call(Unknown Source)
+ java.base@11.0.10/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:32:40,412 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-03-18 02:32:40,413 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:32:40,555 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-18 02:32:40,717 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Starting...
+2021-03-18 02:32:42,491 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2021-03-18 02:32:42,538 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-18 02:32:43,995 INFO org.apache.juli.logging.DirectJDKLog [task-1] Illegal access: this web application instance has been stopped already. Could not load [META-INF/validation.xml]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [META-INF/validation.xml]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1115)
+	at org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath(ResourceLoaderHelper.java:61)
+	at org.hibernate.validator.internal.xml.config.ValidationXmlParser.getValidationXmlInputStream(ValidationXmlParser.java:121)
+	at org.hibernate.validator.internal.xml.config.ValidationXmlParser.parseValidationXml(ValidationXmlParser.java:69)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.getBootstrapConfiguration(AbstractConfigurationImpl.java:508)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.parseValidationXml(AbstractConfigurationImpl.java:664)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.buildValidatorFactory(AbstractConfigurationImpl.java:421)
+	at javax.validation.Validation.buildDefaultValidatorFactory(Validation.java:103)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.getValidatorFactory(TypeSafeActivator.java:501)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.activate(TypeSafeActivator.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.hibernate.cfg.beanvalidation.BeanValidationIntegrator.integrate(BeanValidationIntegrator.java:131)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:280)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:32:45,315 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 02:32:45,326 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:32:45,331 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:32:45,332 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-03-18 02:32:45,747 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-03-18 02:32:45,764 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-18 02:32:45,939 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field autenAuthenticationManager in com.codemobiles.stock_backend.security.JWTAuthenticationFiltter required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2021-03-18 02:32:48,139 INFO org.springframework.boot.StartupInfoLogger [main] Starting StockBackendApplication on DESKTOP-5I9DO52 with PID 8972 (E:\ProjectKKT\Connect Database\stock_backend\target\classes started by Shitty in E:\ProjectKKT\Connect Database\stock_backend)
+2021-03-18 02:32:48,145 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-03-18 02:32:49,245 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-18 02:32:49,398 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 137ms. Found 2 JPA repository interfaces.
+2021-03-18 02:32:50,154 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 1150 (http)
+2021-03-18 02:32:50,170 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1150"]
+2021-03-18 02:32:50,171 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-18 02:32:50,172 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-18 02:32:50,363 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-18 02:32:50,364 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2125 ms
+2021-03-18 02:32:50,472 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 02:32:50,608 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:32:50,675 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 02:32:50,759 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authenticationFilter': Unsatisfied dependency expressed through field 'autenAuthenticationManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-03-18 02:32:50,775 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-03-18 02:32:50,799 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2021-03-18 02:32:50,807 WARN org.apache.juli.logging.DirectJDKLog [main] The web application [ROOT] appears to have started a thread named [task-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/jdk.internal.loader.URLClassPath.getResource(URLClassPath.java:313)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:695)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+ java.base@11.0.10/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+ java.base@11.0.10/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+ app//org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.<init>(BytecodeProviderImpl.java:53)
+ app//org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:345)
+ app//org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:337)
+ app//org.hibernate.cfg.Environment.<clinit>(Environment.java:230)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1345)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1335)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.mergeSettings(EntityManagerFactoryBuilderImpl.java:471)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:217)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:168)
+ app//org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:52)
+ app//org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean$$Lambda$641/0x00000001005aa840.call(Unknown Source)
+ java.base@11.0.10/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:32:50,810 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-03-18 02:32:50,811 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:32:50,989 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-18 02:32:51,130 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Starting...
+2021-03-18 02:32:52,667 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2021-03-18 02:32:52,709 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-18 02:32:54,329 INFO org.apache.juli.logging.DirectJDKLog [task-1] Illegal access: this web application instance has been stopped already. Could not load [META-INF/validation.xml]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [META-INF/validation.xml]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1115)
+	at org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath(ResourceLoaderHelper.java:61)
+	at org.hibernate.validator.internal.xml.config.ValidationXmlParser.getValidationXmlInputStream(ValidationXmlParser.java:121)
+	at org.hibernate.validator.internal.xml.config.ValidationXmlParser.parseValidationXml(ValidationXmlParser.java:69)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.getBootstrapConfiguration(AbstractConfigurationImpl.java:508)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.parseValidationXml(AbstractConfigurationImpl.java:664)
+	at org.hibernate.validator.internal.engine.AbstractConfigurationImpl.buildValidatorFactory(AbstractConfigurationImpl.java:421)
+	at javax.validation.Validation.buildDefaultValidatorFactory(Validation.java:103)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.getValidatorFactory(TypeSafeActivator.java:501)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.activate(TypeSafeActivator.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.hibernate.cfg.beanvalidation.BeanValidationIntegrator.integrate(BeanValidationIntegrator.java:131)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:280)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:32:55,424 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 02:32:55,436 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:32:55,442 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:32:55,443 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-03-18 02:32:55,874 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-03-18 02:32:55,884 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-18 02:32:55,990 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field autenAuthenticationManager in com.codemobiles.stock_backend.security.JWTAuthenticationFiltter required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2021-03-18 02:34:35,393 INFO org.springframework.boot.StartupInfoLogger [main] Starting StockBackendApplication on DESKTOP-5I9DO52 with PID 12552 (E:\ProjectKKT\Connect Database\stock_backend\target\classes started by Shitty in E:\ProjectKKT\Connect Database\stock_backend)
+2021-03-18 02:34:35,398 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-03-18 02:34:36,363 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-18 02:34:36,466 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 90ms. Found 2 JPA repository interfaces.
+2021-03-18 02:34:37,251 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 1150 (http)
+2021-03-18 02:34:37,262 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1150"]
+2021-03-18 02:34:37,263 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-18 02:34:37,263 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-18 02:34:37,405 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-18 02:34:37,405 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1949 ms
+2021-03-18 02:34:37,532 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 02:34:37,664 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:34:37,736 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 02:34:37,787 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'authenticationFilter' defined in class path resource [com/codemobiles/stock_backend/config/SecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter]: Factory method 'authenticationFilter' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor JWTAuthenticationFiltter() is undefined
+
+2021-03-18 02:34:37,816 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2021-03-18 02:34:37,825 WARN org.apache.juli.logging.DirectJDKLog [main] The web application [ROOT] appears to have started a thread named [task-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/java.lang.ClassLoader.defineClass1(Native Method)
+ java.base@11.0.10/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+ java.base@11.0.10/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+ java.base@11.0.10/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+ java.base@11.0.10/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+ java.base@11.0.10/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+ app//org.hibernate.service.StandardServiceInitiators.buildStandardServiceInitiatorList(StandardServiceInitiators.java:90)
+ app//org.hibernate.service.StandardServiceInitiators.<clinit>(StandardServiceInitiators.java:52)
+ app//org.hibernate.boot.registry.StandardServiceRegistryBuilder.standardInitiatorList(StandardServiceRegistryBuilder.java:165)
+ app//org.hibernate.boot.registry.StandardServiceRegistryBuilder.<init>(StandardServiceRegistryBuilder.java:113)
+ app//org.hibernate.boot.registry.StandardServiceRegistryBuilder$2.<init>(StandardServiceRegistryBuilder.java:58)
+ app//org.hibernate.boot.registry.StandardServiceRegistryBuilder.forJpa(StandardServiceRegistryBuilder.java:54)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:215)
+ app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:168)
+ app//org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:52)
+ app//org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+ app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean$$Lambda$641/0x00000001005aa840.call(Unknown Source)
+ java.base@11.0.10/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:34:37,830 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-03-18 02:34:37,831 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:34:37,833 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-03-18 02:34:37,838 INFO org.apache.juli.logging.DirectJDKLog [task-1] Illegal access: this web application instance has been stopped already. Could not load [hibernate.properties]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [hibernate.properties]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1115)
+	at org.hibernate.internal.util.ConfigHelper.getResourceAsStream(ConfigHelper.java:123)
+	at org.hibernate.cfg.Environment.<clinit>(Environment.java:181)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1345)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$MergedSettings.<init>(EntityManagerFactoryBuilderImpl.java:1335)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.mergeSettings(EntityManagerFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:217)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:168)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:52)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-18 02:34:37,839 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [main] Invocation of destroy method failed on bean with name 'entityManagerFactory': java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.ExceptionInInitializerError
+2021-03-18 02:34:37,839 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:34:37,853 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-18 02:34:37,856 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.codemobiles.stock_backend.StockBackendApplication.main(StockBackendApplication.java:13)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:191)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:176)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158)
+	... 9 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authenticationFilter' defined in class path resource [com/codemobiles/stock_backend/config/SecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter]: Factory method 'authenticationFilter' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor JWTAuthenticationFiltter() is undefined
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:484)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5136)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:468)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	... 14 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter]: Factory method 'authenticationFilter' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor JWTAuthenticationFiltter() is undefined
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 55 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The constructor JWTAuthenticationFiltter() is undefined
+
+	at com.codemobiles.stock_backend.config.SecurityConfig.authenticationFilter(SecurityConfig.java:56)
+	at com.codemobiles.stock_backend.config.SecurityConfig$$EnhancerBySpringCGLIB$$d85c7f51.CGLIB$authenticationFilter$2(<generated>)
+	at com.codemobiles.stock_backend.config.SecurityConfig$$EnhancerBySpringCGLIB$$d85c7f51$$FastClassBySpringCGLIB$$5d8c7bf2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.codemobiles.stock_backend.config.SecurityConfig$$EnhancerBySpringCGLIB$$d85c7f51.authenticationFilter(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 56 common frames omitted
+2021-03-18 02:37:07,816 INFO org.springframework.boot.StartupInfoLogger [main] Starting StockBackendApplication on DESKTOP-5I9DO52 with PID 1448 (E:\ProjectKKT\Connect Database\stock_backend\target\classes started by Shitty in E:\ProjectKKT\Connect Database\stock_backend)
+2021-03-18 02:37:07,821 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-03-18 02:37:08,697 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-18 02:37:08,791 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 82ms. Found 2 JPA repository interfaces.
+2021-03-18 02:37:09,488 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 1150 (http)
+2021-03-18 02:37:09,500 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1150"]
+2021-03-18 02:37:09,501 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-18 02:37:09,501 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-18 02:37:09,646 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-18 02:37:09,646 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1770 ms
+2021-03-18 02:37:09,738 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 02:37:09,870 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 02:37:09,932 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 02:37:10,025 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-03-18 02:37:10,235 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-18 02:37:10,278 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3caee3a8, org.springframework.security.web.context.SecurityContextPersistenceFilter@77a0dd63, org.springframework.security.web.header.HeaderWriterFilter@65da01f4, org.springframework.security.web.authentication.logout.LogoutFilter@34a20f16, com.codemobiles.stock_backend.security.JWTAuthenticationFiltter@45592af7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b2fdffc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ccd611e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69a40b3c, org.springframework.security.web.session.SessionManagementFilter@7c8874ef, org.springframework.security.web.access.ExceptionTranslationFilter@1bd8afc8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@723e3c17]
+2021-03-18 02:37:10,459 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Starting...
+2021-03-18 02:37:11,945 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2021-03-18 02:37:11,987 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-18 02:37:14,170 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 02:37:14,188 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 02:37:14,706 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-1150"]
+2021-03-18 02:37:14,735 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 1150 (http) with context path ''
+2021-03-18 02:37:14,737 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2021-03-18 02:37:14,976 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2021-03-18 02:37:14,995 INFO org.springframework.boot.StartupInfoLogger [main] Started StockBackendApplication in 7.85 seconds (JVM running for 9.067)
+2021-03-18 02:37:44,295 INFO org.apache.juli.logging.DirectJDKLog [http-nio-1150-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 02:37:44,295 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1150-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-18 02:37:44,308 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1150-exec-2] Completed initialization in 13 ms
+2021-03-18 03:08:06,112 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(35)-127.0.0.1] Application shutdown requested.
+2021-03-18 03:08:06,401 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(35)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 03:08:06,404 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [RMI TCP Connection(35)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 03:08:06,404 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(35)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-03-18 03:08:07,692 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(35)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-03-18 20:57:42,762 INFO org.springframework.boot.StartupInfoLogger [main] Starting StockBackendApplication on DESKTOP-5I9DO52 with PID 17100 (E:\ProjectKKT\Connect Database\stock_backend\target\classes started by Shitty in E:\ProjectKKT\Connect Database\stock_backend)
+2021-03-18 20:57:43,280 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-03-18 20:57:48,257 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-18 20:57:48,812 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 430ms. Found 2 JPA repository interfaces.
+2021-03-18 20:57:52,551 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 1150 (http)
+2021-03-18 20:57:52,594 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1150"]
+2021-03-18 20:57:52,595 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-18 20:57:52,596 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-18 20:57:53,155 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-18 20:57:53,155 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 9806 ms
+2021-03-18 20:57:53,404 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 20:57:54,005 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 20:57:54,746 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 20:57:56,116 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-03-18 20:57:57,697 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d7ad0f5, org.springframework.security.web.context.SecurityContextPersistenceFilter@24134cbc, org.springframework.security.web.header.HeaderWriterFilter@3d104c9b, org.springframework.security.web.authentication.logout.LogoutFilter@22a6d75c, com.codemobiles.stock_backend.security.JWTAuthenticationFiltter@61f377d1, com.codemobiles.stock_backend.security.JWTAuthentizationFiltter@30abf79c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22f02996, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76396509, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49a38b1, org.springframework.security.web.session.SessionManagementFilter@6da54910, org.springframework.security.web.access.ExceptionTranslationFilter@4c18516, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37c7766e]
+2021-03-18 20:57:58,044 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-18 20:57:58,915 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Starting...
+2021-03-18 20:58:01,132 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2021-03-18 20:58:01,317 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-18 20:58:05,145 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 20:58:05,183 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 20:58:06,696 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-1150"]
+2021-03-18 20:58:06,847 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 1150 (http) with context path ''
+2021-03-18 20:58:06,849 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2021-03-18 20:58:07,332 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2021-03-18 20:58:07,365 INFO org.springframework.boot.StartupInfoLogger [main] Started StockBackendApplication in 25.471 seconds (JVM running for 27.069)
+2021-03-18 20:58:35,947 INFO org.apache.juli.logging.DirectJDKLog [http-nio-1150-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 20:58:35,947 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1150-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-18 20:58:36,479 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1150-exec-1] Completed initialization in 531 ms
+2021-03-18 20:59:47,883 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-1150-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2021-03-18T20:58:41Z. Current time: 2021-03-18T20:59:47Z, a difference of 66860 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.codemobiles.stock_backend.security.JWTAuthentizationFiltter.getAuthentication(JWTAuthentizationFiltter.java:40)
+	at com.codemobiles.stock_backend.security.JWTAuthentizationFiltter.doFilterInternal(JWTAuthentizationFiltter.java:32)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-18 21:11:08,947 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(17)-127.0.0.1] Application shutdown requested.
+2021-03-18 21:11:09,290 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(17)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 21:11:09,304 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [RMI TCP Connection(17)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 21:11:09,304 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(17)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-03-18 21:11:09,980 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(17)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-03-18 21:13:45,419 INFO org.springframework.boot.StartupInfoLogger [main] Starting StockBackendApplication on DESKTOP-5I9DO52 with PID 14600 (E:\ProjectKKT\Connect Database\stock_backend\target\classes started by Shitty in E:\ProjectKKT\Connect Database\stock_backend)
+2021-03-18 21:13:45,422 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-03-18 21:13:46,464 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-18 21:13:46,569 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 92ms. Found 2 JPA repository interfaces.
+2021-03-18 21:13:47,389 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 1150 (http)
+2021-03-18 21:13:47,402 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1150"]
+2021-03-18 21:13:47,403 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-18 21:13:47,403 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-18 21:13:47,603 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-18 21:13:47,604 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2104 ms
+2021-03-18 21:13:47,709 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 21:13:47,851 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 21:13:47,987 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 21:13:48,135 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-03-18 21:13:48,373 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-18 21:13:48,418 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e6ec74, org.springframework.security.web.context.SecurityContextPersistenceFilter@6da54910, org.springframework.security.web.header.HeaderWriterFilter@4c18516, org.springframework.security.web.authentication.logout.LogoutFilter@5fef0c19, com.codemobiles.stock_backend.security.JWTAuthenticationFiltter@62ade015, com.codemobiles.stock_backend.security.JWTAuthentizationFiltter@2bd8f7db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24134cbc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ca3d826, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d7ad0f5, org.springframework.security.web.session.SessionManagementFilter@3d104c9b, org.springframework.security.web.access.ExceptionTranslationFilter@15605d83, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@687389a6]
+2021-03-18 21:13:48,581 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Starting...
+2021-03-18 21:13:50,152 INFO com.zaxxer.hikari.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2021-03-18 21:13:50,293 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-18 21:13:53,368 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 21:13:53,393 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 21:13:54,272 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-1150"]
+2021-03-18 21:13:54,312 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 1150 (http) with context path ''
+2021-03-18 21:13:54,313 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2021-03-18 21:13:54,538 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2021-03-18 21:13:54,552 INFO org.springframework.boot.StartupInfoLogger [main] Started StockBackendApplication in 10.323 seconds (JVM running for 11.799)
+2021-03-18 21:14:49,251 INFO org.apache.juli.logging.DirectJDKLog [http-nio-1150-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 21:14:49,252 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1150-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-18 21:14:49,265 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1150-exec-2] Completed initialization in 13 ms
+2021-03-18 22:19:06,701 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(68)-127.0.0.1] Application shutdown requested.
+2021-03-18 22:19:07,037 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(68)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 22:19:07,053 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [RMI TCP Connection(68)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 22:19:07,054 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(68)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-03-18 22:19:13,882 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(68)-127.0.0.1] HikariPool-1 - Shutdown completed.
